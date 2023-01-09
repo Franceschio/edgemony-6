@@ -39,7 +39,7 @@ const calculatorThree = (
   op = prompt("inserisci l'operazione che preferisci")
 ) => {
   if (op === "+") {
-    return calculatorSomma();
+    return calculatorSomma(newNum1, newNum2);
   } else if (op === "-") {
     return calculatorSottrazione(newNum1, newNum2);
   } else if (op === "*") {
