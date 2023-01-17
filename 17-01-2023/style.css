@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  background-color: rgb(0, 0, 130);
+}
+
+header .hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+header .menuTendina {
+  background-color: rgb(45, 71, 127);
+  position: absolute;
+  width: 300px;
+  right: 15px;
+  top: 60px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.4s;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+header .menuTendina button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 0, 130);
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+header .hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.hero img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+section .hero {
+  height: 500px;
+  position: relative;
+  margin: 40px;
+  border: 4px solid rgb(0, 0, 130);
+}
+
+section .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container h1 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 350px;
+  left: 480px;
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.container h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+section .products {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+section .products .card {
+  border: 2px solid rgb(0, 0, 130);
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+section .products .card img {
+  width: 100%;
+  margin-bottom: 10px;
+  max-height: 130px;
+  object-fit: cover;
+  border: 2px solid rgb(0, 0, 130);
+}
+
+section .products .card .title {
+  font-size: 24px;
+}
+
+section .products .card button {
+  padding: 5px 10px;
+  background-color: rgb(0, 0, 130);
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+section .products .card button:hover {
+  background-color: rgb(0, 0, 83);
+}
+
+.cartProduct {
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(218, 218, 218);
+  border: 2px solid rgb(0, 0, 130);
+  padding: 3px;
+}
+
+.cartProduct:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.cartImgContainer {
+  height: 100%;
+  width: 30%;
+}
+
+.cartImgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.cartProduct h5 {
+  width: 60%;
+}
+
+.cartDelete {
+  height: 20px;
+  border-radius: 100%;
+  width: 10%;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cartDelete:hover {
+  background-color: rgb(56, 0, 0);
+}
