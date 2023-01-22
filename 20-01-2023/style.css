@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  cursor: pointer;
+}
+
+#cambioPagina {
+  color: #070671;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(0, 0, 130);
+}
+
+header .hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+header .circle {
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 15px;
+  right: 18px;
+}
+
+header .menuTendina {
+  background-color: rgb(45, 71, 127);
+  position: absolute;
+  width: 300px;
+  right: 15px;
+  top: 60px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.4s;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+header .menuTendina button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(0, 0, 130);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.8s;
+  padding: 10px;
+  display: inherit;
+}
+
+header .menuTendina button:hover {
+  background-color: rgb(48, 82, 156);
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+#tot {
+  margin-top: 30px;
+  color: white;
+  pointer-events: none;
+}
+
+header .hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.container {
+  padding-top: 100px;
+}
+
+section .hero {
+  height: 500px;
+  position: relative;
+  margin: 40px;
+  border: 4px solid rgb(0, 0, 130);
+  border-radius: 3px;
+}
+
+#heroTitle {
+  width: 350px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200px, -60px);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  z-index: 2;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+section .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+}
+
+#filtri {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.categorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.categorie h3 {
+  margin-bottom: 20px;
+}
+
+.prezziFiltrati {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.categorie h3,
+.container h5 {
+  color: rgb(0, 0, 130);
+}
+
+#tutteCategorie:hover {
+  cursor: pointer;
+  color: #aa2bff;
+}
+
+#tuttiPrezzi:hover {
+  cursor: pointer;
+  color: #aa2bff;
+}
+
+.categorie ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.categorie li {
+  cursor: pointer;
+  background-clip: inherit;
+  background: linear-gradient(180deg, #070671 5%, #aa2bff 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.8;
+}
+
+.categorie li:hover {
+  background-clip: inherit;
+  background: linear-gradient(180deg, #040339 5%, #49136d 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prezziFiltrati {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  transform: translateY(15px);
+}
+
+.prezzi li {
+  font-size: 14px;
+}
+
+.prezziFiltrati h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prezziFiltrati ul {
+  display: flex;
+  gap: 20px;
+}
+
+.prezzi li {
+  color: blue;
+  cursor: pointer;
+}
+
+#prodottiTitle,
+#filtriTitle {
+  font-size: 30px;
+  background-clip: inherit;
+  background: linear-gradient(180deg, #070671 5%, #aa2bff 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+}
+
+section .products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+  position: relative;
+}
+
+section .products .card {
+  background-color: rgba(174, 78, 252, 0.084);
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+}
+
+section .products .card img {
+  object-fit: contain;
+  height: 230px;
+  width: 230px;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.title:hover {
+  color: blue;
+}
+
+.price {
+  background-clip: inherit;
+  background: linear-gradient(180deg, #070671 5%, #aa2bff 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+}
+
+.description {
+  width: 25%;
+  font-size: 13px;
+}
+
+section .products .card button {
+  padding: 5px 10px;
+  background-color: rgb(0, 0, 130);
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+section .products .card button:hover {
+  background-color: rgb(0, 0, 83);
+  transform: scale(1.1);
+}
+
+.cartProduct {
+  display: flex;
+  gap: 8px;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  padding: 3px;
+  transition: 0.8s;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cartImgContainer {
+  height: 100%;
+  width: 20%;
+}
+
+.cartImgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.cartProduct h5 {
+  width: 40%;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.cartProduct h5:hover {
+  color: blue;
+}
+
+.cartProduct p {
+  font-size: 10px;
+  height: 10%;
+}
+
+.cartPrice {
+  width: 10%;
+  font-size: 15px;
+  color: #aa2bff;
+}
+
+.qntContainer {
+  width: 10%;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+#qntUp {
+  font-size: 15px;
+  height: 20%;
+  color: green;
+  transform: translate(10px, 25px);
+  cursor: pointer;
+}
+
+#qntPop {
+  font-size: 20px;
+  height: 5%;
+  color: red;
+  transform: translate(-10px);
+  cursor: pointer;
+}
+
+.cartDelete {
+  height: 14px;
+  border-radius: 100%;
+  width: 7%;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.8s;
+  font-size: 10px;
+}
+
+.cartDelete:hover {
+  background-color: rgb(56, 0, 0);
+  border-color: rgb(56, 0, 0);
+}
+
+#loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loader {
+  color: #060553;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #040339;
+  color: rgb(186, 114, 253);
+  padding: 5px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+footer h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+footer li:hover {
+  transform: scale(1.3);
+  transition: 0.8s;
+}
+
+footer h4,
+h1 {
+  cursor: default;
+}
+
+.richieste {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.richieste ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 10px;
+}
+
+.assistenza {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contatti {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ritorna {
+  text-align: center;
+  font-family: monospace;
+  height: 20px;
+  width: 100vw;
+}
+
+.ritorna:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 300px !important;
+  }
+
+  section .hero h1 {
+    font-size: 15px;
+    width: 150px !important;
+    transform: translate(-60px, -10px) !important;
+  }
+
+  section .products {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .card {
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    height: 100px !important;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    padding: 10px !important;
+  }
+
+  section .products .card img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+  }
+
+  section .products .card .title {
+    font-size: 8px;
+    width: 24%;
+  }
+
+  .price {
+    font-size: 10px;
+    width: 15%;
+  }
+
+  .description {
+    font-size: 7px;
+  }
+
+  section .products .card button {
+    padding: 5px;
+    font-size: 6px;
+    width: 20%;
+  }
+
+  .categorie li {
+    font-size: 10px;
+  }
+
+  .prezzi li {
+    font-size: 10px;
+  }
+}
