@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}
+
+body h1 {
+  font-family: Verdana, Tahoma, sans-serif;
+  color: rgb(0, 177, 62);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  margin: 50px;
+  border: 10px solid rgb(165, 75, 42);
+  height: 90%;
+  width: 50%;
+  border-radius: 5px;
+  background-color: rgb(215, 215, 215);
+  position: relative;
+  transform: translate(-10px);
+}
+
+#quote {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#phrase {
+  padding: 10px;
+  height: 50%;
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#author {
+  padding: 5px;
+  height: 50%;
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#changePhrase {
+  padding: 10px;
+  background-color: gold;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#changePhrase:hover {
+  background-color: goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 80%;
+  }
+}

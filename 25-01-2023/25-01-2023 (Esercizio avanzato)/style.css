@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  background: linear-gradient(140deg, rgb(10, 85, 1) 0%, rgb(127, 2, 2) 100%);
+}
+
+body h1 {
+  background-clip: inherit;
+  background: linear-gradient(90deg, rgb(170, 0, 0) 50%, rgb(20, 171, 3) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main {
+  height: 85%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid rgb(156, 155, 155);
+  background-color: black;
+  border-radius: 10px;
+}
+
+.legend {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 8px;
+}
+
+.square {
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgb(156, 155, 155);
+}
+
+#firstSquare {
+  background-color: rgb(0, 255, 0);
+}
+
+#secondSquare {
+  background-color: red;
+}
+
+.graphic {
+  border: 1px solid rgb(156, 155, 155);
+  height: 350px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: black;
+  transform: rotate(180deg);
+}
+
+.completed {
+  width: 50px;
+  background-color: rgb(0, 255, 0);
+  border: 1px solid rgb(156, 155, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+  max-height: 100%;
+}
+
+.uncompleted {
+  width: 50px;
+  background-color: red;
+  border: 1px solid rgb(156, 155, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+  max-height: 100%;
+}
+
+.percentage {
+  color: black;
+  z-index: 3;
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 75%;
+  }
+
+  .graphic {
+    height: 70%;
+    width: 70%;
+  }
+}
