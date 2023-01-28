@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.6s;
+}
+
+a:hover {
+  color: rgb(25, 133, 255);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(0, 0, 61);
+  overflow-x: hidden;
+}
+
+.barraRicerca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 25px;
+}
+
+svg {
+  height: 80%;
+  width: 25px;
+}
+
+#search {
+  height: 100%;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid rgb(1, 1, 146);
+  border-radius: 5px;
+}
+
+#searchBtn {
+  width: 27px;
+  height: 100%;
+  border-radius: 100%;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1, 1, 146);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#searchBtn:hover {
+  background-color: rgb(50, 50, 255);
+}
+
+#searchBtn:active {
+  transform: scale(0.9);
+}
+
+header {
+  background-color: rgb(158, 23, 243);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 60px;
+}
+
+.divider {
+  padding-top: 100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 95%;
+  background: radial-gradient(
+    circle,
+    rgba(3, 0, 56, 1) 30%,
+    rgba(115, 121, 9, 1) 55%,
+    rgba(147, 72, 251, 1) 90%
+  );
+  border-radius: 10px;
+}
+
+.searchs {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.tvshow img {
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.8s;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  color: white;
+}
+
+.tvshow img:hover {
+  transform: scale(1.1);
+}
