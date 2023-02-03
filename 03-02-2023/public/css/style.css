@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  color: white;
+  z-index: -2;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overflow {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overflow h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px, -50px);
+  font-size: 70px;
+}
+
+main {
+  width: 100%;
+  transform: translateY(-150px);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgb(253, 253, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0.311) 110%,
+    rgba(255, 255, 255, 0.15) 50%
+  );
+  padding-top: 40px;
+}
+
+.card {
+  height: 200px;
+  width: 280px;
+  background-color: rgb(232, 232, 232);
+  color: black;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cardTitle {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.91);
+  color: white;
+  opacity: 0;
+  transition: 0.4s;
+  transform: translateX(-100%);
+  padding: 0px 10px 0px 10px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card:hover .cardTitle {
+  transform: rotateY(180deg);
+  font-size: 0px;
+}
