@@ -41,12 +41,13 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: rgb(253, 253, 253);
+  /* background: rgb(253, 253, 253); */
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 70%,
     rgba(255, 255, 255, 0.311) 110%,
-    rgba(255, 255, 255, 0.15) 50%
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(0, 0, 0, 0) 10%
   );
   padding-top: 40px;
 }
