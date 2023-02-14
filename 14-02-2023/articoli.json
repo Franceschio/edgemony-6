@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "63eb995f46633f3a7b154f8b"
+  },
+  "titolo": "prodotto1",
+  "descrizione": "prodotto",
+  "categoria": "scarpe"
+},{
+  "_id": {
+    "$oid": "63eb9af646633f3a7b154f8c"
+  },
+  "titolo": "prodotto2",
+  "descrizione": "prodotto",
+  "categoria": "scarpe"
+},{
+  "_id": {
+    "$oid": "63eb9af646633f3a7b154f8d"
+  },
+  "titolo": "prodotto3",
+  "descrizione": "prodotto",
+  "categoria": "vestititi"
+},{
+  "_id": {
+    "$oid": "63eb9af646633f3a7b154f8e"
+  },
+  "titolo": "prodotto4",
+  "descrizione": "prodotto",
+  "categoria": "vestiti"
+}]
