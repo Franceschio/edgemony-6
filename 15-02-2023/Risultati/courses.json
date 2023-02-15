@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "63ecef441b592761e56416d4"
+  },
+  "nome": "La seconda guerra mondiale",
+  "materia": "storia",
+  "professore": "Paolo Paoli"
+},{
+  "_id": {
+    "$oid": "63ecef441b592761e56416d5"
+  },
+  "nome": "Salvador Dalì",
+  "materia": "arte",
+  "professore": "Mauro Mauri"
+}]
