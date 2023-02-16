@@ -1,0 +1,23 @@
+require("./models/DBconfig");
+require("./models/oggettiConfig");
+const express = require("express");
+const hbs = require("hbs");
+const bodyparser = require("body-parser");
+const routes = require("./controllers/routes");
+let app = express();
+const PORT = 3000;
+
+app.set("view engine", "hbs");
+hbs.registerPartials(__dirname + "/views/partials");
+app.use(express.static("./public"));
+
+app.use(
+  bodyparser.urlencoded({
+    extended: true,
+  })
+);
+app.use("/", routes);
+
+app.listen(PORT, () => {
+  console.log(`Server in ascolto sulla porta ${3000}`);
+});
