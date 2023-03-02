@@ -1,0 +1,10 @@
+.PostsList {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: center;
+}

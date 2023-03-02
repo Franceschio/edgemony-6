@@ -1,0 +1,42 @@
+.Post {
+  font-size: 13px;
+  height: 200px;
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  border: 2px solid rgba(182, 182, 182, 0.244);
+  background-color: white;
+  box-shadow: 2px, 2px, 4px, rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: 0.4s;
+  color: black;
+}
+
+.Post:hover {
+  transform: scale(1.3);
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+.Post::-webkit-scrollbar {
+  display: none;
+}
+
+.tagButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.tagButton:hover {
+  background-color: grey;
+}
