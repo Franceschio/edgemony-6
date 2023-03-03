@@ -1,0 +1,34 @@
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+}
+
+.InDark {
+  background-color: rgb(28, 28, 28);
+  color: white;
+}
+
+.darkModeSet {
+  position: absolute;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  top: 4px;
+  left: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.InDark .Gallery img {
+  border: 2px solid white;
+}
+
+.InDark .PostsList {
+  background-color: rgb(28, 28, 28);
+}

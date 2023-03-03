@@ -1,0 +1,25 @@
+.Gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.imgCont {
+  height: 300px;
+  width: 500px;
+  border: 1px solid black;
+}
+
+.imgCont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
