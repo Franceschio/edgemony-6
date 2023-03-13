@@ -1,0 +1,26 @@
+.TodosList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.addNew {
+  height: 200px;
+  width: 300px;
+  border-radius: 50px;
+  border: 3px solid rgb(150, 150, 150);
+  background-color: white;
+  color: rgb(32, 32, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.addNew span {
+  cursor: pointer;
+}
