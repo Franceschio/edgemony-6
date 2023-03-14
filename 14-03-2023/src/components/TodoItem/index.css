@@ -1,0 +1,24 @@
+.TodoItem {
+  height: 200px;
+  width: 300px;
+  border-radius: 50px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  color: black;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.deleteTodo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: red;
+  cursor: pointer;
+  user-select: none;
+}
