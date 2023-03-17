@@ -1,0 +1,42 @@
+.Footer {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #50004d;
+  padding: 40px;
+}
+
+.Footer h2 {
+  color: white;
+}
+
+.Footer a {
+  list-style: none;
+  color: white;
+}
+
+.Footer a:hover {
+  color: #b902b3;
+}
+
+.Footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.Footer ul li {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.Footer ul li:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
